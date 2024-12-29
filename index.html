@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+  <div class="white-box">
+    <h1>Contact Us</h1>
+    <form>
+      <div class="name-row"> 
+        <div class="fname-container"> 
+          <label for="first-name" class="fname-title">
+            First Name <span class="required">*</span>
+          </label>
+          <input type="text" id="first-name" name="first-name" class="fname-input" placeholder="Enter your first name">
+        </div>
+        <div class="lname-container"> 
+          <label for="last-name" class="lname-title">
+            Last Name <span class="required">*</span>
+          </label>
+          <input type="text" id="last-name" name="last-name" class="lname-input" placeholder="Enter your last name">
+        </div>
+      </div>
+      <div class="email">
+        <label for="email" class="email-title">
+          Email Address <span class="required">*</span>
+        </label>
+        <input type="email" id="email" name="email" class="email-input" placeholder="Enter your email">
+      </div>
+      <div class="Query Type">
+        <label for="query" class="query-title">
+            Query Type <span class="required">*</span>
+        </label>
+        <div class="query-type-container">
+            <div class="query-type">
+                <label class="custom-radio">
+                    <input type="radio" name="query-type" value="general" id="general-inquiry">
+                    <span class="radio-text">General Inquiry</span>
+                </label>
+            </div>
+            <div class="query-type">
+                <label class="custom-radio">
+                    <input type="radio" name="query-type" value="support" id="support-request">
+                    <span class="radio-text">Support Request</span>
+                </label>
+            </div>
+        </div>
+        <!-- The error message for query-type will be appended here -->
+    </div>
+
+    <div id="success-message-container" style="display: none;">
+      <div id="success-message" class="success-box">
+          <img id="success-image" class="success-image" src="check.svg" alt="Success Icon">
+          <div id="success-text-container" class="text-container">
+              <h2 class="success-title">Message Sent!</h2>
+              <p class="success-subtitle">Thanks for completing the form. We'll be in touch soon!</p>
+          </div>
+      </div>
+  </div>
+
+    
+    <div class="message-container">
+        <label for="message" class="message-title">
+            Message <span class="required">*</span>
+        </label>
+        <textarea id="message" name="message" class="message-input" placeholder="Write your message here..."></textarea>
+        <!-- The error message for message will be appended here -->
+    </div>
+    
+    <div class="checkbox-container">
+        <input type="checkbox" id="agree" class="checkbox-input">
+        <label for="agree" class="checkbox-label">
+            I hereby consent to being contacted by the team <span class="required">*</span>
+        </label>
+        <!-- The error message for checkbox will be appended here -->
+    </div>
+    
+    <div class="button-container">
+        <button type="submit" class="submit-button">Submit</button>
+    </div>
+    
+            
+    </form>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Prisha Kaliraman</a>.
+  </div>
+  <script src="form-script.js"></script> <!-- For external JS file -->  
+</body>
+</html>
+
